@@ -39,6 +39,7 @@ plt.rcParams['font.sans-serif'] = ['Hiragino Sans GB']    # 设置plot可是可�
 plt.rcParams['axes.unicode_minus'] = False
 
 sns.set(context='talk', style='whitegrid', palette='muted', rc={'figure.figsize': [20, 15]})    # 设置轴参数
+sns.set_style({'font.sans-serif' : ['Hiragino Sans GB']})           # 设置字体可以显示中文
 ax = sns.lineplot(x='Date', y='V-BTC', label='BTC', data=df)         # 在一个轴上绘制各条曲线
 ax = sns.lineplot(x='Date', y='V-EOS', label='EOS', data=df)
 ax = sns.lineplot(x='Date', y='V-XIN', label='XIN', data=df)
