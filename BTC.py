@@ -48,6 +48,10 @@ ax = sns.lineplot(x='Date', y='V-BTC_R', label='RI BTC', data=df)
 ax = sns.lineplot(x='Date', y='V-BOX_R', label='RI BOX', data=df)
 ax.yaxis.set_major_formatter(mtick.PercentFormatter(1.0))       # 把y轴的小数通过百分比显示
 ax.set_title('虚拟货币增长曲线')
+ax.set_ylabel('增长率')
+ax.set_xlabel('时间')
+fig = ax.get_figure()
+plt.savefig('./BTC_Cruve.jpg')
 
 
 
